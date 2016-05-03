@@ -1,4 +1,3 @@
-cmd /cC:\Users\Agustin\Desktop\Rokobox85\Runner.exe
-C:\\Users\\Agustin\\Desktop\\marduk64.exe
-C:\Program Files (x86)\UltraStarDeluxeWorldParty\ultrastardx.exe
-
+C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+C:\Program Files (x86)\Google\Chrome\Application\chrome.exe

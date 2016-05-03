@@ -118,12 +118,21 @@ public class Karaoke implements KeyListener {
                         //karaokeGui.rmKeyListener(this);
                         new Thread (new WindowsClickController()).start();
                         p = Runtime.getRuntime().exec(exe1Path);
-                        //karaokeGui.setVisible(false);
-                        
-                       
-                        //karaokeGui.setKeyListener(this);
-                        //karaokeGui.setVisible(true);
-
+                        karaokeGui.setVisible(false);
+                        while(p.isAlive()){
+                            try {
+                                Thread.sleep(900);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                        }
+                        try {
+                            Thread.sleep(2500);                    
+                            
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        karaokeGui.setVisible(true);
                         } catch (IOException ex) {
                             Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
                         } /*catch (InterruptedException ex) {
@@ -136,10 +145,21 @@ public class Karaoke implements KeyListener {
                        // karaokeGui.rmKeyListener(this);
                          new Thread (new WindowsClickController()).start();
                         p = Runtime.getRuntime().exec(exe2Path);
-                        //karaokeGui.setVisible(false);
-                       
-                        //karaokeGui.setKeyListener(this);
-                        //karaokeGui.setVisible(true);
+                        karaokeGui.setVisible(false);
+                        while(p.isAlive()){
+                            try {
+                                Thread.sleep(900);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                        }
+                        try {
+                            Thread.sleep(2500);                    
+                            
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        karaokeGui.setVisible(true);
 
                         } catch (IOException ex) {
                             Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
@@ -152,7 +172,15 @@ public class Karaoke implements KeyListener {
                         try { 
                         new Thread (new WindowsClickController()).start();
                         p = Runtime.getRuntime().exec(exe3Path);
-
+                        karaokeGui.setVisible(false);
+                        while(p.isAlive()){
+                            try {
+                                Thread.sleep(700);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                        }
+                        karaokeGui.setVisible(true);
                         } catch (IOException ex) {
                             Logger.getLogger(Karaoke.class.getName()).log(Level.SEVERE, null, ex);
                         }/* catch (InterruptedException ex) {
